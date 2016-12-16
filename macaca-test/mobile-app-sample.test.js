@@ -94,6 +94,13 @@ describe('macaca mobile sample', function() {
 
   it('#3 should scroll tableview', function() {
     return driver
+      /** only for Android
+      .elementByName('list')
+      .getProperty('description') // content-desc
+      .then(d => {
+        console.log(d);
+      })
+      */
       .elementByName('list')
       .getProperty('origin')
       .then(origin => {
