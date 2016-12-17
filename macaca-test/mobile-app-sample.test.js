@@ -43,6 +43,7 @@ var androidOpts = {
 };
 
 const isIOS = platform === 'ios';
+const infoBoardId = isIOS ? 'info' : 'com.github.android_app_bootstrap:id/info';
 
 const wd = require('macaca-wd');
 
@@ -52,7 +53,7 @@ require('./wd-extend')(wd, isIOS);
 describe('macaca mobile sample', function() {
   this.timeout(5 * 60 * 1000);
 
-  var driver = wd.promiseChainRemote({
+  const driver = wd.promiseChainRemote({
     host: 'localhost',
     port: 3456
   });
@@ -146,7 +147,6 @@ describe('macaca mobile sample', function() {
       .click()
       .sleep(1000)
       .then(() => {
-        // TODO expect
         return driver
           .touch('tap', {
             x: 100,
@@ -155,16 +155,19 @@ describe('macaca mobile sample', function() {
           .sleep(1000);
       })
       .then(() => {
-        // TODO expect
         return driver
           .touch('doubleTap', {
             x: 100,
             y: 100
           })
-          .sleep(1000);
+          .sleep(1000)
+          .elementById(infoBoardId)
+          .text()
+          .then(text => {
+            text.should.containEql('singleTap');
+          });
       })
       .then(() => {
-        // TODO expect
         return driver
           .touch('press', {
             x: 100,
@@ -174,9 +177,8 @@ describe('macaca mobile sample', function() {
           .sleep(1000);
       })
       .then(() => {
-        // TODO expect
         return driver
-          .elementById(isIOS ? 'info' : 'com.github.android_app_bootstrap:id/info')
+          .elementById(infoBoardId)
           .touch('pinch', {
             scale: 2,      // only for iOS
             velocity: 1,   // only for iOS
@@ -188,14 +190,12 @@ describe('macaca mobile sample', function() {
       /*
       // TODO Android rotate
       .then(() => {
-        // TODO expect
         return driver
           .touch('rotate', {
           })
           .sleep(1000);
       })*/
       .then(() => {
-        // TODO expect
         return driver
           .touch('drag', {
             fromX: 100,
@@ -219,11 +219,11 @@ describe('macaca mobile sample', function() {
       .takeScreenshot()
       .changeToWebviewContext()
       .elementById('pushView')
-      .tap()
+      .click()
       .sleep(5000)
       .changeToWebviewContext()
       .elementById('popView')
-      .tap()
+      .click()
       .sleep(5000)
       .takeScreenshot();
   });
@@ -253,10 +253,10 @@ describe('macaca mobile sample', function() {
       .elementById('index-kw')
       .sendKeys('中文+Macaca')
       .elementById('index-bn')
-      .tap()
+      .click()
       .sleep(5000)
       .source()
-      .then(function(html) {
+      .then(html => {
         html.should.containEql('Macaca');
       })
       .execute(`document.body.innerHTML = "<h1>${pkg.name}</h1>"`)
