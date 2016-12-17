@@ -141,6 +141,11 @@ describe('macaca mobile sample', function() {
       .click()
       .sleep(1000)
       .acceptAlert()
+      .sleep(1000)
+      // TODO keyevent only Android
+      //.keys(29)
+      //.keys(30)
+      //.keys(21)
       .customback()
       .sleep(1000)
       .elementByName('Gesture')
