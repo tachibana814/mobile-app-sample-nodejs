@@ -169,7 +169,7 @@ describe('macaca mobile sample', function() {
           .elementById(infoBoardId)
           .text()
           .then(text => {
-            text.should.containEql('singleTap');
+            text.should.containEql('doubleTap');
           });
       })
       .then(() => {
