@@ -240,6 +240,16 @@ describe('macaca mobile sample', function() {
   it('#7 should works with web', function() {
     return driver
       .changeToWebviewContext()
+      .title()
+      .then(title => {
+        console.log(`title: ${title}`);
+      })
+      .url()
+      .then(url => {
+        console.log(`url: ${url}`);
+      })
+      .refresh()
+      .sleep(2000)
       .elementById('index-kw')
       .sendKeys('中文+Macaca')
       .elementById('index-bn')
