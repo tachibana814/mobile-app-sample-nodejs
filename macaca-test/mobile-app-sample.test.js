@@ -103,14 +103,9 @@ describe('macaca mobile sample', function() {
       })
       */
       .elementByName('list')
-      .getProperty('origin')
-      .then(origin => {
-        console.log(`list element origin:${JSON.stringify(origin)}`);
-      })
-      .elementByName('list')
-      .getProperty('size')
-      .then(size => {
-        console.log(`list element size:${JSON.stringify(size)}`);
+      .getRect()
+      .then(info => {
+        console.log(`list element info: ${JSON.stringify(info)}`);
       })
       .elementByName('HOME')
       .click()
