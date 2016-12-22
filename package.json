@@ -1,6 +1,6 @@
 {
   "name": "mobile-app-sample-nodejs",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Macaca mobile app sample for Node.js",
   "keywords": [
     "macaca",
@@ -20,6 +20,7 @@
     "macaca-wd": "^1.0.12",
     "mocha": "^3.2.0",
     "pre-commit": "1.1.1",
+    "should": "^11.1.2",
     "xml2map": "^1.0.2"
   },
   "scripts": {
