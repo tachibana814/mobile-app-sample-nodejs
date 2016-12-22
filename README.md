@@ -9,15 +9,15 @@
 
 | Platform   | Status                                          |  Repo              |
 | ---------- | ----------------------------------------------- | ------------------ |
-| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-test-sample-ios-ci](https://github.com/xudafeng/macaca-test-sample-ios-ci)         |
-| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-test-sample-android-ci](https://github.com/xudafeng/macaca-test-sample-android-ci) |
+| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-test-sample-ios-ci](https://github.com/macaca-sample/macaca-ci-sample-ios-travis)         |
+| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-test-sample-android-ci](https://github.com/macaca-sample/macaca-ci-sample-android-travis) |
 
 [travis-image-0]: https://img.shields.io/travis/macacajs/macaca-test-sample.svg?style=flat-square
 [travis-url-0]: https://travis-ci.org/macacajs/macaca-test-sample
-[travis-image-1]: https://img.shields.io/travis/xudafeng/macaca-test-sample-ios-ci.svg?style=flat-square
-[travis-url-1]: https://travis-ci.org/xudafeng/macaca-test-sample-ios-ci
-[travis-image-2]: https://img.shields.io/travis/xudafeng/macaca-test-sample-android-ci.svg?style=flat-square
-[travis-url-2]: https://travis-ci.org/xudafeng/macaca-test-sample-android-ci
+[travis-image-1]: https://img.shields.io/travis/macaca-sample/macaca-test-sample-ios-ci.svg?style=flat-square
+[travis-url-1]: https://travis-ci.org/macaca-sample/macaca-test-sample-ios-ci
+[travis-image-2]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-android-travis.svg?style=flat-square
+[travis-url-2]: https://travis-ci.org/macaca-sample/macaca-ci-sample-android-travis
 
 [circle-image-0]: https://circleci.com/gh/macacajs/macaca-test-sample.svg?style=svg
 [circle-url-0]: https://circleci.com/gh/macacajs/macaca-test-sample
