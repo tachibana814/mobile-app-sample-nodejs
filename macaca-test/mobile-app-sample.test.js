@@ -156,7 +156,7 @@ describe('macaca mobile sample', function() {
       })
       .then(() => {
         return driver
-          .touch('singleTap', {
+          .touch('tap', {
             x: 100,
             y: 100
           })
