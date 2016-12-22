@@ -156,7 +156,7 @@ describe('macaca mobile sample', function() {
       })
       .then(() => {
         return driver
-          .touch('doubleTap', {
+          .touch('singleTap', {
             x: 100,
             y: 100
           })
@@ -164,7 +164,7 @@ describe('macaca mobile sample', function() {
           .elementById(infoBoardId)
           .text()
           .then(text => {
-            text.should.containEql('doubleTap');
+            text.should.containEql('singleTap');
           });
       })
       .then(() => {
