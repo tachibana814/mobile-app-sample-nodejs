@@ -14,8 +14,8 @@
 
 [travis-image-0]: https://img.shields.io/travis/macacajs/macaca-test-sample.svg?style=flat-square
 [travis-url-0]: https://travis-ci.org/macacajs/macaca-test-sample
-[travis-image-1]: https://img.shields.io/travis/macaca-sample/macaca-test-sample-ios-ci.svg?style=flat-square
-[travis-url-1]: https://travis-ci.org/macaca-sample/macaca-test-sample-ios-ci
+[travis-image-1]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-ios-travis.svg?style=flat-square
+[travis-url-1]: https://travis-ci.org/macaca-sample/macaca-ci-sample-ios-travis
 [travis-image-2]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-android-travis.svg?style=flat-square
 [travis-url-2]: https://travis-ci.org/macaca-sample/macaca-ci-sample-android-travis
 
