@@ -9,8 +9,8 @@
 
 | Platform   | Status                                          |  Repo              |
 | ---------- | ----------------------------------------------- | ------------------ |
-| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-test-sample-ios-ci](https://github.com/macaca-sample/macaca-ci-sample-ios-travis)         |
-| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-test-sample-android-ci](https://github.com/macaca-sample/macaca-ci-sample-android-travis) |
+| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-ci-sample-ios-travis](https://github.com/macaca-sample/macaca-ci-sample-ios-travis)         |
+| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-ci-sample-android-travis](https://github.com/macaca-sample/macaca-ci-sample-android-travis) |
 
 [travis-image-0]: https://img.shields.io/travis/macacajs/macaca-test-sample.svg?style=flat-square
 [travis-url-0]: https://travis-ci.org/macacajs/macaca-test-sample
