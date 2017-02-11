@@ -7,17 +7,17 @@
 
 ## CI Sample
 
-| Platform   | Status                                          |  Repo              |
-| ---------- | ----------------------------------------------- | ------------------ |
-| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-ci-sample-ios-travis](https://github.com/macaca-sample/macaca-ci-sample-ios-travis)         |
-| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-ci-sample-android-travis](https://github.com/macaca-sample/macaca-ci-sample-android-travis) |
+| Platform   | Status                                          |  Repo                                                                                                             |
+| ---------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| iOS        | [![build status][travis-image-1]][travis-url-1] | [macaca-ci-sample-nodejs-ios-travis](https://github.com/macaca-sample/macaca-ci-sample-nodejs-ios-travis)         |
+| Android    | [![build status][travis-image-2]][travis-url-2] | [macaca-ci-sample-nodejs-android-travis](https://github.com/macaca-sample/macaca-ci-sample-nodejs-android-travis) |
 
 [travis-image-0]: https://img.shields.io/travis/macacajs/macaca-test-sample.svg?style=flat-square
 [travis-url-0]: https://travis-ci.org/macacajs/macaca-test-sample
-[travis-image-1]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-ios-travis.svg?style=flat-square
-[travis-url-1]: https://travis-ci.org/macaca-sample/macaca-ci-sample-ios-travis
-[travis-image-2]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-android-travis.svg?style=flat-square
-[travis-url-2]: https://travis-ci.org/macaca-sample/macaca-ci-sample-android-travis
+[travis-image-1]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-nodejs-ios-travis.svg?style=flat-square
+[travis-url-1]: https://travis-ci.org/macaca-sample/macaca-ci-sample-nodejs-ios-travis
+[travis-image-2]: https://img.shields.io/travis/macaca-sample/macaca-ci-sample-nodejs-android-travis.svg?style=flat-square
+[travis-url-2]: https://travis-ci.org/macaca-sample/macaca-ci-sample-nodejs-android-travis
 
 [circle-image-0]: https://circleci.com/gh/macacajs/macaca-test-sample.svg?style=svg
 [circle-url-0]: https://circleci.com/gh/macacajs/macaca-test-sample
