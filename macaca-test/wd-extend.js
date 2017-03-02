@@ -85,4 +85,55 @@ module.exports = (wd, isIOS) => {
       })
       .sleep(1000);
   });
+
+  wd.addPromiseChainMethod('testGetProperty', function() {
+    if (isIOS) {
+      return this
+        .elementByName('list')
+        .getProperty('isVisible')
+        .then(info => {
+          console.log(`isVisible: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('isAccessible')
+        .then(info => {
+          console.log(`element isAccessible: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('isEnabled')
+        .then(info => {
+          console.log(`element isEnabled: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('type')
+        .then(info => {
+          console.log(`element type: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('label')
+        .then(info => {
+          console.log(`element label: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('name')
+        .then(info => {
+          console.log(`element name: ${JSON.stringify(info)}`);
+        })
+        .elementByName('list')
+        .getProperty('value')
+        .then(info => {
+          console.log(`element value: ${JSON.stringify(info)}`);
+        });
+    }
+
+    // for Android
+
+    return this
+      .elementByName('list')
+      .getProperty('description') // content-desc
+      .then(d => {
+        console.log(d);
+      });
+  });
+
 };
