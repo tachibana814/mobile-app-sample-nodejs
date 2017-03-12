@@ -240,6 +240,11 @@ describe('macaca mobile sample', function() {
       .refresh()
       .sleep(2000)
       .elementById('index-kw')
+      .getProperty('name')
+      .then(info => {
+        console.log(`get web attribute name: ${JSON.stringify(info)}`);
+      })
+      .elementById('index-kw')
       .sendKeys('中文+Macaca')
       .elementById('index-bn')
       .click()
